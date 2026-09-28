@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Objetos Nicolás Manuel</title>
+</head>
+<body>
+    <script>
+        function ejer1()
+        {
+            const persona = {
+            nombre: "Nico",
+            edad: 19,
+            ciudad: "Badajoz"
+            };
+
+            console.log(persona);
+        }
+        function ejer2()
+        {
+           let coche=
+           {
+            marca:"toyota",
+            modelo:"Corolla",
+            año:2020
+           };
+           console.log(coche.marca);
+           coche["año"]=2024;
+           coche.color="Rojo"; 
+        }
+        function ejer3()
+        {
+            let animal={
+                tipo:"ovíparo",
+                nombre:"tortuga",
+                edad:12,
+            };
+            delete animal.edad;
+            console.log(animal);
+        }
+        function ejer4()
+        {
+            let empresa=
+            {
+                direccion:{
+                    calle:"Ricardo Carapeto Zambrano",
+                    numero:109,
+                    ciudad:"Badajoz",
+                }
+            };
+        }
+
+        function ejer5()
+        {
+           let datos=
+           {
+            nombre:"Ana",
+            edad:25,
+            activo:true,
+            salario:1200
+           };
+           function filtrarPorTipo(datos,tipo)
+           {
+            let datosaux={};
+            for(let dato in datos)
+           {
+            if(datos[dato]===tipo)
+           {
+                datosaux[clave]=datos[clave];
+           }
+           }
+            return datosaux;
+        }
+        console.log(filtrarPorTipo(datos,"number"));
+    }
+    ejer1();
+    ejer2();
+    ejer3();
+    ejer4();
+    ejer5();
+
+    </script>
+</body>
+</html>
